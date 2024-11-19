@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Contact form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<section class="section">
+<h1>Contact Us</h1>
+<form id="myForm">
+  <div class="name-field">
+    <div class="name">
+      <label for="">First Name *</label>
+      <input type="text" id="firstname">
+      <p class="error first-name"></p>
+    </div>
+    <div class="name">
+      <label for="">Last Name *</label>
+      <input type="text" id="lastname">
+      <p class="error lastname-err"></p>
+    </div>
+  </div>
+  <label> Email Address *</label>
+  <input type="text" id="email">
+  <p class="error email-err"></p>
+  <div class="query-type">
+    <div class="query">
+      <label for="">Query Type *</label>
+      <button id="general"><span><img src="./assets/images/icon-radio-selected.svg" alt=""></span> General Enquiry</button>
+      <p class="error query_err"></p>
+    </div>
+    <div class="query">
+      <button id="support"><span><img class="support_btn" src="./assets/images/icon-radio-selected.svg" alt=""> </span>Support Request</button>
+    </div>
+  </div>
+  <label for="">Message *</label>
+  <textarea name="" id="message"></textarea>
+  <p class="error message_err"></p>
+
+  <div class="consent-form">
+    <div><img src="./assets/images/icon-checkbox-check.svg" alt=""></div>
+    <p>I consent to being contacted by the team</p>
+  </div>
+  <p class="error consent-err"></p>
+  <input type="submit" value="Submit">
+</form>
+</section>
+
+<div class="success-state">
+  <div class="success-header">
+    <img src="./assets/images/icon-success-check.svg" alt="">
+    <h1> Message Sent!</h1>
+  </div>
+  <p>Thanks for completing the form. We'll be in touch soon!</p>
+</div>
+ 
+  <!-- Please enter a valid email address
+  This field is required
+
+  Please select a query type
+
+  Message
+  This field is required
+
+  
+  To submit this form, please consent to being contacted -->
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+
+  <script src="./app.js"></script>
+</body>
+</html>
